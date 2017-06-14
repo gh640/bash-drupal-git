@@ -1,4 +1,4 @@
-function dgit {
+dgit() {
   if [ -z "$1" ]; then
     echo 'usage: dgit [URL]'
     return
@@ -7,8 +7,7 @@ function dgit {
   git clone "https://git.drupal.org/project/${1}.git"
 }
 
-_dgit_completion()
-{
+_dgit_completion() {
   local cur prev cword opts
   local directory
 
