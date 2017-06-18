@@ -1,6 +1,6 @@
 dgit() {
   if [ -z "$1" ]; then
-    echo 'usage: dgit [URL]'
+    echo "usage: ${FUNCNAME[0]} [URL]"
     return
   fi
 
